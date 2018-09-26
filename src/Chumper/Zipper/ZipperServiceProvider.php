@@ -31,11 +31,6 @@ class ZipperServiceProvider extends ServiceProvider
 
             return $return;
         });
-
-        $this->app->booting(function () {
-            $loader = AliasLoader::getInstance();
-            $loader->alias('Zipper', 'Chumper\Zipper\Facades\Zipper');
-        });
     }
 
     /**
